@@ -1,4 +1,4 @@
-export const config = {
+exports.config = {
     //
     // ====================
     // Runner Configuration
@@ -21,7 +21,7 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test-suites/smoke-tests/*'
     ],
     // Patterns to exclude.
     exclude: [
@@ -50,7 +50,8 @@ export const config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        // capabilities for local browser web tests
+        browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
     }],
 
     //
